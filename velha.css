@@ -1,0 +1,64 @@
+html{
+     
+   margin:0 auto;
+}
+body{ display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(216, 28%, 7%);
+}
+
+h1{
+    color: rgb(238, 220, 17);
+    position: relative;
+     left: 40px;
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#jogo{
+    margin-top: 50px;
+    width:603px;
+    height:600px;
+    border:solid 3px rgb(255, 234, 0);
+}
+ 
+.linha{
+    height:200px;
+    border-bottom:solid 1px rgb(255, 238, 0);
+}
+ 
+.casa{
+    width:200px;
+    height:100%;
+    border-right:solid 1px rgb(255, 255, 0);
+    float:left;
+}
+ 
+ p{ color:white;
+    font-weight: 600;
+    text-align: center;
+    padding: 5px;
+    font-size: 80px;
+}
+#demon{
+    border: 1px solid white;
+}
+input{
+    position: relative;
+    top:50px;
+    right:160px;
+    color:black;
+    width: 100px;
+}
+ #jogador1{
+    font-weight: 600;
+    background-color: black;
+    color: yellow;
+    border: 1px solid black;
+ }
+ #jogador2{
+   font-weight: 600;
+    background-color: yellow;
+    border: 1px solid yellow;
+ }
