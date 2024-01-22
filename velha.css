@@ -1,7 +1,7 @@
 html{
-     
+     overflow-y: hidden;
    margin:0 auto;
-   overflow-y: hidden;
+   
 }
 body{ display: flex;
     justify-content: center;
@@ -18,37 +18,31 @@ h1{
 }
 
 #jogo{
-    margin-top:5px;
     width:603px;
-    height:595px;
-    border:solid 3px rgb(255, 234, 0);
+    height:600px;
+    border:solid 3px yellow;
 }
  
 .linha{
-    height:199px;
-    border-bottom:solid 1px rgb(255, 238, 0);
+    height:200px;
+    border-bottom:solid 1px yellow;
 }
  
 .casa{
     width:200px;
     height:100%;
-    border-right:solid 1px rgb(255, 255, 0);
+    border-right:solid 1px yellow;
     float:left;
 }
- 
+
+  
  p{ color:white;
     font-weight: 600;
     text-align: center;
     padding: 5px;
     font-size: 80px;
 }
-.casa{
-    font-size: 80px;
-    padding: 7px;
-    font-weight: 600;
-    color:white;
-    text-align: center;
-}
+ 
 input{  height: 30px;
     position: relative;
     top:50px;

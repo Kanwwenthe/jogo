@@ -3,69 +3,107 @@
   
 
  
-function jogador1(){
-         let jogador1=prompt("X ou O primeira casa"  )
-       if(jogador1=="x"||jogador1=="X"||jogador1=="o"||jogador1=="O"){
-        document.getElementById("casa11").innerHTML=`${jogador1}`
+
+      
+      let jogadas=1
+      let NumerosCasas=0 
+       NumerosCasas++
+       NumerosCasas=+jogadas
+      
+       //PRIMEIRA CASA
+   function casa1(){   
+      
+        
+       if(NumerosCasas==1&&NumerosCasas++){
+        document.getElementById("casa11").innerHTML=`x`
+        console.log(NumerosCasas)
        }else{
-        throw'Erro jogo parado '
-       }
-    
-    let jogador2=prompt("X ou o segunda casa ")
-          if(jogador2=="x"||jogador2=="o"){
-            document.getElementById("casa21").innerHTML=`${jogador2}`
-          }else{
-            throw'Erro  '
-          }
-     
-          let jogador3=prompt("X ou o terceira casa")
-          if(jogador3=="x"||jogador3=="o"){
-            document.getElementById("casa31").innerHTML=`${jogador3}`
-          }else{
-            throw'Erro  '
-          }
-          
-          let jogador4=prompt("X ou o terceira casa=jogador1")
-          if(jogador4=="x"||jogador4=="o"){
-            document.getElementById("casa41").innerHTML=`${jogador4}`
-          }else{
-            throw'Erro  '
-          }
-    
-          let jogador5=prompt("X ou o  quinta casa= ")
-          if(jogador5=="x"||jogador5=="o"){
-            document.getElementById("casa51").innerHTML=`${jogador5}`
-          }else{
-            throw'Erro  '
-          }
-    
-          let jogador6=prompt("X ou O sexta casa= ")
-          if(jogador6=="x"||jogador6=="o"){
-            document.getElementById("casa61").innerHTML=`${jogador6}`
-          }else{
-            throw'Erro  '
-          }
-    
-          let jogador7=prompt("X ou O setima casa= ")
-          if(jogador7=="x"||jogador7=="o"){
-            document.getElementById("casa71").innerHTML=`${jogador7}`
-          }else{
-            throw'Erro  '
-          }
-          let jogador8=prompt("X ou O oitva casa ")
-          if(jogador8=="x"||jogador8=="o"){
-            document.getElementById("casa81").innerHTML=`${jogador8}`
-          }else{
-            throw'Erro  '
-          }
-          let jogador9=prompt("X ou o nona casa")
-          if(jogador9=="x"||jogador9=="o"){
-            document.getElementById("casa91").innerHTML=`${jogador9}`
-          }else{
-               throw'Erro  '
-          }
-          }
+            document.getElementById("casa11").innerHTML="o"
+      }}
    
- 
- document.addEventListener("click",jogador1)
- 
+   function casa2(){
+       if(NumerosCasas==2&&NumerosCasas++){
+       document.getElementById("casa21").innerHTML="x"
+       }else{  
+            document.getElementById("casa21").innerHTML=`o`
+        console.log(NumerosCasas)
+            
+       } 
+      }
+      function casa3(){
+           
+       if(NumerosCasas==3&&NumerosCasas++){
+             document.getElementById("casa31").innerHTML="o"  
+           console.log(NumerosCasas)
+       }else{
+            document.getElementById("casa31").innerHTML="x"
+            console.log(NumerosCasas)
+       }  if(typeof NumerosCasas!="undefined"){
+            console.log(typeof NumerosCasas)
+       }
+      }     
+  document.addEventListener("click",casa3())
+ document.addEventListener("click",casa2())  
+ document.addEventListener("click",casa1())
+ // SEGUNDA CASA
+
+ function SegundaCasa(){ 
+   
+      if( NumerosCasas==4&&NumerosCasas++){
+            document.getElementById("casa41").innerHTML="x"
+            console.log(NumerosCasas)
+            
+   
+      }else{
+             document.getElementById("casa41").innerHTML="o"
+             console.log(NumerosCasas)
+              
+      }
+ }
+ function Terceira(){
+     if(NumerosCasas==5&&NumerosCasas++){
+      document.getElementById("casa51").innerHTML="x"
+      console.log(NumerosCasas)
+     }else{
+      document.getElementById("casa51").innerHTML="o"
+      console.log(NumerosCasas)
+     }
+ }
+ function Quartar(){
+      if(NumerosCasas==6&&NumerosCasas++){
+            document.getElementById("casa61").innerHTML="x"
+      }else{
+            document.getElementById("casa61").innerHTML="o"
+      }
+ }
+ document.addEventListener("click",Quartar())
+ document.addEventListener("click",Terceira())
+ document.addEventListener("click",SegundaCasa())
+ //ultima casa
+
+ function  Ultimacasa(){
+      if(NumerosCasas==7&&NumerosCasas++){
+            document.getElementById("casa71").innerHTML="x"
+            console.log(NumerosCasas)
+      }else{
+            document.getElementById("casa71").innerHTML="o"
+            console.log(NumerosCasas)
+      }
+ }
+ function SegundaUltimaCasa(){
+      if(NumerosCasas==8&&NumerosCasas++){
+            document.getElementById("casa81").innerHTML="x"
+      }else{
+            document.getElementById("casa81").innerHTML="o"
+      }
+ }
+ function TerceiraUltimaCasa(){
+      if(NumerosCasas==9&&NumerosCasas++){
+            document.getElementById("casa91").innerHTML="x"
+      }else{
+            document.getElementById("casa91").innerHTML="o"
+      }
+ }
+ document.addEventListener("click",Ultimacasa())
+ document.addEventListener("click",SegundaUltimaCasa())
+ document.addEventListener("click",TerceiraUltimaCasa())
