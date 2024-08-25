@@ -14,7 +14,7 @@
    function casa1(){   
       
         
-       if(NumerosCasas==1&&NumerosCasas++){
+       if(NumerosCasas==0&&NumerosCasas++){
         document.getElementById("casa11").innerHTML=`x`
         console.log(NumerosCasas)
        }else{
@@ -22,7 +22,7 @@
       }}
    
    function casa2(){
-       if(NumerosCasas==2&&NumerosCasas++){
+       if(NumerosCasas==1&&NumerosCasas++){
        document.getElementById("casa21").innerHTML="x"
        }else{  
             document.getElementById("casa21").innerHTML=`o`
