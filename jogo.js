@@ -9,7 +9,7 @@
       let NumerosCasas
        NumerosCasas++
        NumerosCasas=+jogadas
-      
+    
        //PRIMEIRA CASA
    function casa1(){   
       
