@@ -5,8 +5,8 @@
  
 
       
-      let jogadas=1
-      let NumerosCasas=0 
+      let jogadas=0
+      let NumerosCasas
        NumerosCasas++
        NumerosCasas=+jogadas
       
