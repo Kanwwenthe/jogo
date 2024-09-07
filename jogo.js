@@ -14,7 +14,7 @@
    function casa1(){   
       
         
-       if(NumerosCasas==1&&NumerosCasas++){
+       if(NumerosCasas==2&&NumerosCasas++){
         document.getElementById("casa11").innerHTML=`x`
         console.log(NumerosCasas)
        }else{
